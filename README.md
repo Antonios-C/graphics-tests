@@ -1,4 +1,22 @@
-# Lightweight Render Example
+# TI Graphics Tests
+
+Various graphics related tests that do not currently have any other test mechanisms.
+
+## Build guide 
+
+This repository utilizes the Meson build system. 
+
+In order to build, please pick which test you want to build and list them in the ``test`` option. 
+
+Example:
+
+```bash 
+meson setup <build_dir> -D test=<test1>,<test2>
+```
+
+Below you will find a list of available tests to build
+
+## Lightweight Render Example
 
 Heavily inspired by Eduardo Lima's
 [gpu-playground](https://github.com/elima/gpu-playground/), this attempts to act
@@ -13,7 +31,7 @@ Both works are good reference and should be utilized for more advanced examples.
 This project has adopted CC0 1.0 Universal so that others may use it as a
 starting point without attribution.
 
-## Checking the output
+### Checking the output
 
 The application will currently attempt to render a 1920x1080 scene with
 RGBA8888. This will be dumped directly to an output binary file. If you wish to

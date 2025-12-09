@@ -1,0 +1,6 @@
+option('test',
+  type : 'array',
+  description : 'Choose which demo/demos to build',
+  choices : ['lightweight-offscreen'],
+  value : ['lightweight-offscreen'], # By default lets build the lightweight-offscreen example
+)
